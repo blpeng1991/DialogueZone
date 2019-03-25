@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+   {% include header.html %}
+  <body>
+    <div class="topcover">
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+
+        <h1 id="appTitle">Dialogue Zone</h1>
+        <h2 id="appSubtitle">The multidomain diaogue toolkit</h2>
+
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="cover" id="contentCover">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5">
+        <div class="infoCard">
+          <div class="infoBody">
+            <div class="infoHeadline">
+              <h2>What is Dialogue Zone?</h2>
+              {{ content }}
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="col-md-7">
+            <div class="infoCard">
+              <div class="infoBody">
+                <div class="infoHeadline">
+                  <h2>Leaderboard</h2>
+                </div>
+                <table class="table borderless performance">
+                  <tbody>
+                    <tr>
+                      <th>Rank</th>
+                      <th>Agent</th>
+                      <th>Success Rate</th>
+                      <th>Human Rating</th>
+                    </tr>
+                    <tr class="human-row">
+                      <td>1</td>
+                      <td>Human Agent <br>Microsoft</td>
+                      <td>100</td>
+                      <td>10</td>                      
+                    </tr>
+                    {% for res in site.data.rank %}
+                    <tr>
+                      <td>{{res.rank}}  </td>
+                      <td> {{res.model}} </td>
+                      <td> {{res.successrate}} </td>
+                      <td> {{res.humanrating}} </td>
+                    <tr>
+                      {% endfor %}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    </div>
+  </body>
+  {% include footer.html %}
+</html>

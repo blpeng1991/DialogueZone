@@ -1,0 +1,4 @@
+rank,model,successrate,humanrating
+2, DQN, 90, 10
+3, DQN, 80, 9
+4, DQN, 70, 9
