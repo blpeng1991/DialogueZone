@@ -18,7 +18,12 @@ nav a {
 
 header .container{
     /*background-color: black;*/
-    color: white
+    color: white;
+}
+
+footer .cover{
+    /*background-color: black;*/
+    color: black;
 }
 
 #navbarResponsive a {
@@ -34,7 +39,7 @@ header .container{
 }
 
 #navbarResponsive li {
-    padding-right: 50px
+    padding-left: 50px
 }
 
 /*.container{*/
@@ -51,6 +56,11 @@ header .container{
 
 }
 
+html,body {
+            height: 83%;
+            /*width:100%*/
+        }
+
 table {
     border-spacing:100px;
 }
@@ -64,8 +74,14 @@ site-footer {
 }
 
 #bottomconver {
+    /*position: fixed;
+    bottom: 0px
+    left:0px;
+    height: 100px;*/
     padding-top: 15px;
-    /*background-color: black;*/
+    padding-right: 50px;
+    background-color: white;
     text-align:right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     
 }
